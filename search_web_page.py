@@ -1,8 +1,8 @@
 import urllib.request
 
-words = ['Bluetooth', 'libstagefright', 'word2']
+words = ['Bluetooth', 'the hobbit', 'word2']
 
-daLink = "file:///home/mthomas/python_progs/search_web_page/NVD_Dashboard-Mapping.html"
+daLink = "https://foo.com"
 site = urllib.request.urlopen(daLink).read()
 for word in words:
     if word.encode() in site:
